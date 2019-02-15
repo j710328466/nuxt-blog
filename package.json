@@ -1,0 +1,24 @@
+{
+  "name": "江志雄的博客",
+  "version": "1.0.0",
+  "description": "使用服务端渲染的博客",
+  "author": "江志雄",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.4.0",
+    "koa": "^2.6.2",
+    "ant-design-vue": "^1.1.10",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
